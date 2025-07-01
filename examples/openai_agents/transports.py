@@ -66,7 +66,9 @@ async def main_stream():
             await run(server)
 
 async def main():
+    # Server-Sent Events (SSE) - Deprecated, The legacy SSE transport enabled server-to-client streaming with HTTP POST requests for client-to-server communication.
     await main_sse()
+    # Streamable HTTP - The Streamable HTTP transport uses HTTP POST requests for client-to-server communication and optional Server-Sent Events (SSE) streams for server-to-client communication.
     await main_stream()
 
 if __name__ == "__main__":

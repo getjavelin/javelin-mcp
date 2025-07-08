@@ -1,6 +1,6 @@
 ## ⁠Local MCP server with the local Tools
 
-- [Docker Desktop MCP Integration](https://www.docker.com/blog/introducing-docker-mcp-catalog-and-toolkit/) with their **MCP Toolkit** provides:
+- [Docker Desktop MCP Integration](https://www.docker.com/blog/introducing-docker-mcp-catalog-and-toolkit/) with their [**MCP Catalog and Toolkit**](https://docs.docker.com/ai/mcp-catalog-and-toolkit/) provides:
 
 1. **Centralized Discovery** - A trusted hub for discovering MCP tools integrated into Docker Hub
 2. **Containerized Deployment** - Run MCP servers as containers without complex setup
@@ -16,3 +16,4 @@ The Docker MCP ecosystem includes over 100 verified tools from partners like Str
 ## Remote MCP server with remote tools
 
 ## ⁠Remote MCP server with local tools (no sure if this use case exists?)
+

@@ -20,6 +20,8 @@ The Docker MCP ecosystem includes over 100 verified tools from partners like Str
 
 Claude only presently works over stdio, and we rightly ignore stdio in favor of SSE, you will need to use a layer in between.
 
+![image](https://github.com/user-attachments/assets/290299fe-221b-4ee5-8ab3-3ff02c6bbab5)
+
 ❤️ open-source
 - [fastmcp](https://github.com/jlowin/fastmcp?tab=readme-ov-file#proxy-servers)
 - [mcp-proxy](https://github.com/sparfenyuk/mcp-proxy)

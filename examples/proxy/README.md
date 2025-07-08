@@ -30,3 +30,5 @@ Claude only presently works over stdio, need to use a layer in between.
 
 ## ⁠Remote MCP server with local tools (no sure if this use case exists?)
 
+local tools will be more like Builtin tools 
+

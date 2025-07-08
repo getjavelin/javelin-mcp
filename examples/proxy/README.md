@@ -1,4 +1,4 @@
-## ⁠Local MCP server with the local Tools
+## ⁠Local MCP server with the Local Tools
 
 Docker Desktop MCP Integration with their **MCP Catalog and Toolkit** provides:
 1. **Centralized Discovery** - A trusted hub for discovering MCP tools integrated into Docker Hub
@@ -16,7 +16,7 @@ The Docker MCP ecosystem includes over 100 verified tools from partners like Str
 
 <img width="1728" alt="Screenshot 2025-07-08 at 3 35 56 PM" src="https://github.com/user-attachments/assets/76039f18-6e03-4ae5-899d-83a6597c42bf" />
 
-## Local MCP server with the remote tools
+## Local MCP server with the Remote Tools
 
 Claude only presently works over stdio, need to use a layer in between.
 
@@ -26,9 +26,16 @@ Claude only presently works over stdio, need to use a layer in between.
 - [fastmcp](https://github.com/jlowin/fastmcp?tab=readme-ov-file#proxy-servers)
 - [mcp-proxy](https://github.com/sparfenyuk/mcp-proxy)
 
-## Remote MCP server with remote tools
+## Remote MCP server with Remote Tools
 
-## ⁠Remote MCP server with local tools (no sure if this use case exists?)
+## ⁠Remote MCP server with Local (Builtin) Tools 
 
-local tools will be more like Builtin tools 
+In the current Javelin MCP architecture, **tools are expected to be registered and executed remotely** (via an HTTP or gRPC endpoint). However, some tools (such as deterministic utilities or safe built-in actions) may be registered as **builtin tools**, which execute locally within the Javelin runtime.
+
+While it is technically possible to have a remote MCP server route requests to local tools (co-located on the same host), this is not a typical or recommended deployment model.
+
+### 💡 Key Notes:
+- Use **remote tools** for hosted, externally managed actions (e.g., Claude, OpenAI).
+- Use **builtin tools** for internal utilities or tightly coupled logic.
+- A future enhancement may allow hybrid routing, but this is not standard today.
 

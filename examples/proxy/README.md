@@ -26,6 +26,8 @@ Claude only presently works over stdio, need to use a layer in between.
 - [fastmcp](https://github.com/jlowin/fastmcp?tab=readme-ov-file#proxy-servers)
 - [mcp-proxy](https://github.com/sparfenyuk/mcp-proxy)
 
+Javelin Roadmap: https://github.com/getjavelin/javelin-rust - javelin-core++ Rust/Go Private repo Under development.
+
 ## Remote MCP server with Remote Tools
 
 ## ⁠Remote MCP server with Local (Builtin) Tools 

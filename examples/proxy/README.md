@@ -18,7 +18,7 @@ The Docker MCP ecosystem includes over 100 verified tools from partners like Str
 
 ## Local MCP server with the remote tools
 
-Claude only presently works over stdio, and we rightly ignore stdio in favor of SSE, you will need to use a layer in between.
+Claude only presently works over stdio, need to use a layer in between.
 
 ![image](https://github.com/user-attachments/assets/290299fe-221b-4ee5-8ab3-3ff02c6bbab5)
 

@@ -35,7 +35,7 @@ In the current Javelin MCP architecture, **tools are expected to be registered a
 While it is technically possible to have a remote MCP server route requests to local tools (co-located on the same host), this is not a typical or recommended deployment model.
 
 ### 💡 Key Notes:
-- Use **remote tools** for hosted, externally managed actions (e.g., Claude, OpenAI).
+- Use **remote tools** for hosted, externally managed actions (e.g., OpenAI, Anthropic).
 - Use **builtin tools** for internal utilities or tightly coupled logic.
 - A future enhancement may allow hybrid routing, but this is not standard today.
 

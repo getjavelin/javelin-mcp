@@ -23,7 +23,9 @@ The Docker MCP ecosystem includes over 100 verified tools from partners like Str
 
 ## Local MCP server with the Remote Tools
 
-**Javelin Roadmap:** https://github.com/getjavelin/javelin-rust - javelin-core++ Private repo Rust/Go Under development.
+**Javelin Roadmap:** 
+- https://github.com/getjavelin/javelin-rust - javelin-core++ Private repo Rust/Go Under development.
+- Timeline: 
 
 Applications like Claude only presently works over stdio, need to use a layer in between.
 

@@ -1,7 +1,4 @@
-This [Thread on X](As MCP becomes mainstream in IT circles, there’s a growing commercial incentive not to support it—but to restrict it. This highlights an emerging conflict: developers driving adoption vs. enterprise gatekeeping and control.
-
-⸻
-) highlights an emerging conflict: developers driving adoption vs. enterprise gatekeeping and control.
+This [Thread on X](https://x.com/solomonstre/status/1940470145505431674) highlights an emerging conflict: developers driving adoption vs. enterprise gatekeeping and control.
  
 ## ⁠Local MCP server with the Local Tools
 

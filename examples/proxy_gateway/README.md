@@ -16,8 +16,6 @@ The Docker MCP ecosystem includes over 100 verified tools from partners like Str
 - [Introducing Docker MCP Catalog and Toolkit](https://www.docker.com/blog/introducing-docker-mcp-catalog-and-toolkit/)
 - [MCP Introduction and Overview](https://www.philschmid.de/mcp-introduction)
 
-**sidenote:** Apps like Anthropic Claude currently **work only over stdio**, so a lightweight proxy layer is needed to expose them as MCP-compatible endpoints.
-
 <img width="1728" alt="Screenshot 2025-07-08 at 3 35 56 PM" src="https://github.com/user-attachments/assets/76039f18-6e03-4ae5-899d-83a6597c42bf"/>
 
 ## Local MCP server ⬄ Remote Tools
@@ -165,3 +163,5 @@ While it is technically possible to have a remote MCP server route requests to l
 ## Alternatives ❤️ open-source
 - [fastmcp](https://github.com/jlowin/fastmcp?tab=readme-ov-file#proxy-servers)
 - [mcp-proxy](https://github.com/sparfenyuk/mcp-proxy)
+
+**sidenote:** Apps like Anthropic Claude currently **work only over stdio**, so a lightweight proxy layer is needed to expose them as MCP-compatible endpoints.

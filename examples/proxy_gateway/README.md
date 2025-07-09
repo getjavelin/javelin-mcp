@@ -6,7 +6,7 @@
 
 ![image](https://github.com/user-attachments/assets/290299fe-221b-4ee5-8ab3-3ff02c6bbab5)
 
-**side note:** Applications like Claude only presently works over stdio, need to use a layer in between.
+Applications like Claude only presently works over stdio, need to use a layer in between.
 
 ## ⁠Local MCP server with the Local Tools
 

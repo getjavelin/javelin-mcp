@@ -1,4 +1,6 @@
-This [Thread on X](https://x.com/solomonstre/status/1940470145505431674) highlights an emerging conflict: developers driving adoption vs. enterprise gatekeeping and control.
+> 🧵 This [thread on X](https://x.com/solomonstre/status/1940470145505431674) highlights an emerging conflict: developers driving adoption vs. enterprise gatekeeping and control.  
+> 
+> As the MCP protocol gains traction, enterprise vendors are increasingly incentivized to **block** rather than **enable** open developer usage—shifting focus from innovation to control.
  
 ## ⁠Local MCP server with the Local Tools
 

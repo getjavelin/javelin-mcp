@@ -56,6 +56,7 @@ curl http://localhost:8040/v1/admin/tools/github \
       "timeout": "30s"
     }
   }'
+```
    
 **Remote MCP server Catalog:**
 - [List of MCP servers](https://github.com/modelcontextprotocol/servers)

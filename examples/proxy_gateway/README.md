@@ -39,25 +39,34 @@ Listing servers we are testing with ...
 
 **Register First Tool Server** (AKA MCP Server)
 ```bash
-curl http://localhost:8040/v1/admin/tools/github \
+curl https://your-javelin-domain.com/v1/admin/tools/deepwiki \
   -H "Content-Type: application/json" \
   -H "x-javelin-apikey: $JAVELIN_API_KEY" \
   -d '{
-    "name": "github",
+    "name": "deepwiki",
     "type": "streamable-http",
     "version": "1.0.0",
-    "description": "GitHub Copilot MCP integration",
-    "endpoint": "https://api.githubcopilot.com/mcp/",
+    "description": "DeepWiki MCP integration",
+    "endpoint": "https://mcp.deepwiki.com/mcp",
     "is_active": true,
-    "config": {
-      "authorization_token": "Bearer ghp_xxxxxxxxxxxx"
-    },
-    "policy": {
-      "rate_limit": "100/min",
-      "timeout": "30s"
-    }
+    "config": {}
   }'
 ```
+
+**GET Tool Server**
+
+```bash
+curl https://your-javelin-domain.com/v1/admin/tools/deepwiki \
+  -H "Content-Type: application/json" \
+  -H "x-javelin-apikey: $JAVELIN_API_KEY" | jq .
+```
+
+**GET Tools**
+
+```bash
+curl https://your-javelin-domain.com/v1/admin/tools \
+  -H "Content-Type: application/json" \
+  -H "x-javelin-apikey: $JAVELIN_API_KEY" | jq .
    
 **Remote MCP server Catalog:**
 - [List of MCP servers](https://github.com/modelcontextprotocol/servers)

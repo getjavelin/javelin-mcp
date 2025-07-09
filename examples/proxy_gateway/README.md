@@ -41,6 +41,9 @@ Listing servers we are testing with ...
 
 ![Screenshot 2025-07-09 at 3 03 01 PM](https://github.com/user-attachments/assets/8a975110-e341-454b-8266-9a86925ca501)
 
+![screenshot_2025-07-09_at_9 35 28___pm](https://github.com/user-attachments/assets/4de4f94b-67b8-42a9-b27f-36931bc49b14)
+
+![Screenshot 2025-07-09 at 3 04 48 PM](https://github.com/user-attachments/assets/573fe7ba-0439-4cc9-b595-0b9ba457f9a1)
 
 **Register First Tool Server** (AKA MCP Server)
 

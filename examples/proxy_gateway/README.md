@@ -18,6 +18,7 @@ The Docker MCP ecosystem includes over 100 verified tools from partners like Str
 
 <img width="1728" alt="Screenshot 2025-07-08 at 3 35 56 PM" src="https://github.com/user-attachments/assets/76039f18-6e03-4ae5-899d-83a6597c42bf" />
 
+
 **sidenote:** Apps like Anthropic Claude currently **work only over stdio**, so a lightweight proxy layer is needed to expose them as MCP-compatible endpoints.
 
 ## Local MCP server ⬄ Remote Tools

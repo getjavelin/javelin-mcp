@@ -1,9 +1,9 @@
-> 🧵 [Solomon Hykes’ thread](https://x.com/solomonstre/status/1940470145505431674) highlights a new tension: conflict: 
-> Developers want fast MCP adoption, while enterprise vendors may try to **gate** or **block** it for control.
+> 🧵 [Solomon Hykes’ thread](https://x.com/solomonstre/status/1940470145505431674) highlights a new tension: 
+> Developers push for rapid MCP adoption while some enterprise vendors are incentivised to **gate** or **block** it.
 
 ![image](https://github.com/user-attachments/assets/290299fe-221b-4ee5-8ab3-3ff02c6bbab5)
 
-Applications like Claude only presently works over stdio, need to use a layer in between.
+Apps like Anthropic Claude currently **work only over stdio**, so a lightweight proxy layer is needed to expose them as MCP-compatible endpoints.
 
 ## ⁠Local MCP server ⬄ Local Tools
 

@@ -34,21 +34,7 @@ User Query → P-LLM → Python Code → CaMeL Interpreter → Secure Execution
 
 ## Installation
 
-```bash
-pip install -r requirements.txt
-```
-
 ## Usage
-
-```python
-from camel import CaMeLSystem
-
-# Initialize the system
-camel = CaMeLSystem()
-
-# Execute a user query safely
-result = camel.execute("Send Bob the document he requested in our last meeting")
-```
 
 ## Security Guarantees
 

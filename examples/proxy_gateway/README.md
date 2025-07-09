@@ -139,7 +139,7 @@ curl https://your-javelin-domain.com/v1/admin/tools/huggingface \
   }'
 ```
 
-**DELETE** HuggingFace
+**UnRegister Tool Server**
 
 ```bash
 curl -X DELETE https://your-javelin-domain.com/v1/admin/tools/huggingface \

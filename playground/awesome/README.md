@@ -8,6 +8,7 @@
 - [Cua AI](https://www.trycua.com/) 
 - [A command-line interface for interacting with MCP (Model Context Protocol) servers using both stdio and HTTP transport](https://github.com/f/mcptools) 
 - [UI over MCP. Bring rich AI experiences to the agents!](https://github.com/idosal/mcp-ui)
+- [Unlock the Power of MCP Toolbox in Your Go Applications](https://medium.com/google-cloud/unlock-the-power-of-mcp-toolbox-in-your-go-applications-b67a3ab1b374)
 
 --
 

@@ -45,3 +45,5 @@ The solution implements a proxy layer architecture that enhances existing identi
 without requiring modifications to established OAuth/OIDC implementations. This approach
 provides immediate compatibility with major identity providers (Microsoft, Google, etc.) while
 addressing agent-specific security requirements.
+
+![oauth2_security_pattern_complete_responsibility_segregation.svg](attachment:41ff060f-bc24-40e0-ba51-0621d493f88d:oauth2_security_pattern_complete_responsibility_segregation.svg)

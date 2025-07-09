@@ -36,6 +36,26 @@ Listing servers we are testing with ...
 2. [Sentry MCP Server](https://mcp.sentry.dev/)
 3. [DeepWiki MCP Server](https://docs.devin.ai/work-with-devin/deepwiki-mcp)
 4. [Hugging Face](https://huggingface.co/settings/mcp)
+
+```bash
+curl http://localhost:8040/v1/admin/tools/github \
+  -H "Content-Type: application/json" \
+  -H "x-javelin-apikey: $JAVELIN_API_KEY" \
+  -d '{
+    "name": "github",
+    "type": "streamable-http",
+    "version": "1.0.0",
+    "description": "GitHub Copilot MCP integration",
+    "endpoint": "https://api.githubcopilot.com/mcp/",
+    "is_active": true,
+    "config": {
+      "authorization_token": "Bearer ghp_xxxxxxxxxxxx"
+    },
+    "policy": {
+      "rate_limit": "100/min",
+      "timeout": "30s"
+    }
+  }'
    
 **Remote MCP server Catalog:**
 - [List of MCP servers](https://github.com/modelcontextprotocol/servers)

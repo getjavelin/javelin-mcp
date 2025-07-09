@@ -38,6 +38,10 @@ Listing servers we are testing with ...
 3. [Hugging Face](https://huggingface.co/settings/mcp)
 4. [Sentry MCP Server](https://mcp.sentry.dev/)
 
+
+![Screenshot 2025-07-09 at 3 03 01 PM](https://github.com/user-attachments/assets/8a975110-e341-454b-8266-9a86925ca501)
+
+
 **Register First Tool Server** (AKA MCP Server)
 
 1. **DeepWiki**

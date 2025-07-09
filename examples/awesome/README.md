@@ -6,5 +6,5 @@
   - https://www.jlowin.dev/blog/fastmcp-2-6
 - [Strands Agents SDK](https://strandsagents.com/latest/)
 - [Cua AI](https://www.trycua.com/) 
-- GitHub - f/mcptools: A command-line interface for interacting with MCP (Model Context Protocol) servers using both stdio and HTTP transport. 
-- GitHub - idosal/mcp-ui: UI over MCP. Bring rich AI experiences to the agents! 
+- [A command-line interface for interacting with MCP (Model Context Protocol) servers using both stdio and HTTP transport](https://github.com/f/mcptools) 
+- [UI over MCP. Bring rich AI experiences to the agents!](https://github.com/idosal/mcp-ui)

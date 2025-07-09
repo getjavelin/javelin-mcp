@@ -54,6 +54,6 @@ While it is technically possible to have a remote MCP server route requests to l
 - Use **builtin tools** for internal utilities or tightly coupled logic.
 - A future enhancement may allow hybrid routing, but this is not standard today.
 
-## Alternatives:** ❤️ open-source
+## Alternatives ❤️ open-source
 - [fastmcp](https://github.com/jlowin/fastmcp?tab=readme-ov-file#proxy-servers)
 - [mcp-proxy](https://github.com/sparfenyuk/mcp-proxy)

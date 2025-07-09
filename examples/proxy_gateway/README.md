@@ -1,3 +1,8 @@
+This [Thread on X](As MCP becomes mainstream in IT circles, there’s a growing commercial incentive not to support it—but to restrict it. This highlights an emerging conflict: developers driving adoption vs. enterprise gatekeeping and control.
+
+⸻
+) highlights an emerging conflict: developers driving adoption vs. enterprise gatekeeping and control.
+ 
 ## ⁠Local MCP server with the Local Tools
 
 Docker Desktop MCP Integration with their **MCP Catalog and Toolkit** provides:

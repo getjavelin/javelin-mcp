@@ -40,6 +40,7 @@ Listing servers we are testing with ...
       - [Architecture](https://github.com/github/github-mcp-server/blob/main/docs/host-integration.md)
 2. [Sentry MCP Server](https://mcp.sentry.dev/)
 3. [DeepWiki MCP Server](https://docs.devin.ai/work-with-devin/deepwiki-mcp)
+4. [Hugging Face](https://huggingface.co/settings/mcp)
 
 ## ⁠Remote MCP server with Local (Builtin) Tools 
 

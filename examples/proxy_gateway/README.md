@@ -1,6 +1,3 @@
-> 🧵 [Solomon Hykes’ thread](https://x.com/solomonstre/status/1940470145505431674) highlights a new tension: 
-> Developers push for rapid MCP adoption while some enterprise vendors are incentivised to **gate** or **block** it.
-
 ![image](https://github.com/user-attachments/assets/290299fe-221b-4ee5-8ab3-3ff02c6bbab5)
 
 Apps like Anthropic Claude currently **work only over stdio**, so a lightweight proxy layer is needed to expose them as MCP-compatible endpoints.

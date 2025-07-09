@@ -37,8 +37,9 @@ Javelin Roadmap: https://github.com/getjavelin/javelin-rust - javelin-core++ Pri
 
 Listing servers we are testing with ...
 1. [Remote GitHub MCP Server](https://github.blog/changelog/2025-06-12-remote-github-mcp-server-is-now-available-in-public-preview/)
-- [Architecture](https://github.com/github/github-mcp-server/blob/main/docs/host-integration.md)
-2. 
+      - [Architecture](https://github.com/github/github-mcp-server/blob/main/docs/host-integration.md)
+2. [Sentry MCP Server](https://mcp.sentry.dev/)
+3. [DeepWiki MCP Server](https://docs.devin.ai/work-with-devin/deepwiki-mcp)
 
 ## ⁠Remote MCP server with Local (Builtin) Tools 
 

@@ -37,7 +37,13 @@ Listing servers we are testing with ...
 3. [DeepWiki MCP Server](https://docs.devin.ai/work-with-devin/deepwiki-mcp)
 4. [Hugging Face](https://huggingface.co/settings/mcp)
 
+**Remote MCP server Catalog:**
+- [List of MCP servers](https://github.com/modelcontextprotocol/servers)
+
 **Register First Tool Server** (AKA MCP Server)
+
+1. **DeepWiki**
+
 ```bash
 curl https://your-javelin-domain.com/v1/admin/tools/deepwiki \
   -H "Content-Type: application/json" \
@@ -72,19 +78,19 @@ curl https://your-javelin-domain.com/v1/admin/tools \
 **GET Tool Definitions**
 
 ```bash
-curl "http://localhost:8040/v1/admin/tool-definitions/deepwiki" \
+curl "https://your-javelin-domain.com/v1/admin/tool-definitions/deepwiki" \
   -H "Content-Type: application/json" \
   -H "x-javelin-apikey: $JAVELIN_API_KEY" | jq .
 ```
 
 ```bash
-curl http://localhost:8040/v1/admin/tool-definitions \
+curl https://your-javelin-domain.com/v1/admin/tool-definitions \
   -H "Content-Type: application/json" \
   -H "x-javelin-apikey: $JAVELIN_API_KEY" | jq .
 ```
 
 ```bash
- curl "http://localhost:8040/v1/admin/tool-definitions?enabled=true" \
+ curl "https://your-javelin-domain.com/v1/admin/tool-definitions?enabled=true" \
   -H "Content-Type: application/json" \
   -H "x-javelin-apikey: $JAVELIN_API_KEY" | jq .
 ```
@@ -94,7 +100,7 @@ curl http://localhost:8040/v1/admin/tool-definitions \
 2. **GitHub**
 
 ```bash
-curl http://localhost:8040/v1/admin/tools/github \
+curl https://your-javelin-domain.com/v1/admin/tools/github \
   -H "Content-Type: application/json" \
   -H "x-javelin-apikey: $JAVELIN_API_KEY" \
   -d '{
@@ -117,7 +123,7 @@ curl http://localhost:8040/v1/admin/tools/github \
 3. **HuggingFace**
 
 ```bash
-curl http://localhost:8040/v1/admin/tools/huggingface \
+curl https://your-javelin-domain.com/v1/admin/tools/huggingface \
   -H "Content-Type: application/json" \
   -H "x-javelin-apikey: $JAVELIN_API_KEY" \
   -d '{
@@ -136,13 +142,10 @@ curl http://localhost:8040/v1/admin/tools/huggingface \
 **DELETE** HuggingFace
 
 ```bash
-curl -X DELETE http://localhost:8040/v1/admin/tools/huggingface \
+curl -X DELETE https://your-javelin-domain.com/v1/admin/tools/huggingface \
   -H "Content-Type: application/json" \
   -H "x-javelin-apikey: $JAVELIN_API_KEY" | jq .
 ```
-   
-**Remote MCP server Catalog:**
-- [List of MCP servers](https://github.com/modelcontextprotocol/servers)
 
 ## ⁠Remote MCP server ⬄ Local (Builtin) Tools 
 

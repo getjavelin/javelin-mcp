@@ -27,9 +27,9 @@ Claude only presently works over stdio, need to use a layer in between.
 
 ![image](https://github.com/user-attachments/assets/290299fe-221b-4ee5-8ab3-3ff02c6bbab5)
 
-Javelin Roadmap: https://github.com/getjavelin/javelin-rust - javelin-core++ Private repo Rust/Go Under development.
+**Javelin Roadmap:** https://github.com/getjavelin/javelin-rust - javelin-core++ Private repo Rust/Go Under development.
 
-❤️ open-source
+**Alternatives:** ❤️ open-source
 - [fastmcp](https://github.com/jlowin/fastmcp?tab=readme-ov-file#proxy-servers)
 - [mcp-proxy](https://github.com/sparfenyuk/mcp-proxy)
 

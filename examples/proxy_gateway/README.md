@@ -31,10 +31,6 @@ The Docker MCP ecosystem includes over 100 verified tools from partners like Str
 **Javelin Roadmap:** 
 - https://github.com/getjavelin/javelin-rust - javelin-core++ Private repo Rust/Go Under development.
 
-**Alternatives:** ❤️ open-source
-- [fastmcp](https://github.com/jlowin/fastmcp?tab=readme-ov-file#proxy-servers)
-- [mcp-proxy](https://github.com/sparfenyuk/mcp-proxy)
-
 ## Remote MCP server with Remote Tools
 
 Listing servers we are testing with ...
@@ -58,3 +54,6 @@ While it is technically possible to have a remote MCP server route requests to l
 - Use **builtin tools** for internal utilities or tightly coupled logic.
 - A future enhancement may allow hybrid routing, but this is not standard today.
 
+## Alternatives:** ❤️ open-source
+- [fastmcp](https://github.com/jlowin/fastmcp?tab=readme-ov-file#proxy-servers)
+- [mcp-proxy](https://github.com/sparfenyuk/mcp-proxy)

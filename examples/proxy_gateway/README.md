@@ -44,7 +44,8 @@ Listing servers we are testing with ...
 3. [DeepWiki MCP Server](https://docs.devin.ai/work-with-devin/deepwiki-mcp)
 4. [Hugging Face](https://huggingface.co/settings/mcp)
    
-[List of MCP servers](https://github.com/modelcontextprotocol/servers)
+**Catalogs:**
+- [List of MCP servers](https://github.com/modelcontextprotocol/servers)
 
 ## ⁠Remote MCP server with Local (Builtin) Tools 
 

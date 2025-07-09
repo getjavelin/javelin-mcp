@@ -5,6 +5,7 @@
 > 
 
 ![image](https://github.com/user-attachments/assets/290299fe-221b-4ee5-8ab3-3ff02c6bbab5)
+**side note:** Applications like Claude only presently works over stdio, need to use a layer in between.
 
 ## ⁠Local MCP server with the Local Tools
 
@@ -30,8 +31,6 @@ The Docker MCP ecosystem includes over 100 verified tools from partners like Str
 - https://github.com/getjavelin/javelin-rust - javelin-core++ Private repo Rust/Go Under development.
 
 **Alternatives:** ❤️ open-source
-
-Applications like Claude only presently works over stdio, need to use a layer in between.
 - [fastmcp](https://github.com/jlowin/fastmcp?tab=readme-ov-file#proxy-servers)
 - [mcp-proxy](https://github.com/sparfenyuk/mcp-proxy)
 

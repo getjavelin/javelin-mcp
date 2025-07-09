@@ -25,7 +25,7 @@ The Docker MCP ecosystem includes over 100 verified tools from partners like Str
 
 ## Remote MCP server ⬄ Remote Tools
 
-**Remote MCP server Catalog:** [List of MCP servers](https://github.com/modelcontextprotocol/servers)
+**MCP server Catalog:** [Model Context Protocol Servers](https://github.com/modelcontextprotocol/servers)
   
 Listing servers we are testing with ...
 

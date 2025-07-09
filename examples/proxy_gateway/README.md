@@ -67,6 +67,79 @@ curl https://your-javelin-domain.com/v1/admin/tools/deepwiki \
 curl https://your-javelin-domain.com/v1/admin/tools \
   -H "Content-Type: application/json" \
   -H "x-javelin-apikey: $JAVELIN_API_KEY" | jq .
+```
+
+**GET Tool Definitions**
+
+```bash
+curl "http://localhost:8040/v1/admin/tool-definitions/deepwiki" \
+  -H "Content-Type: application/json" \
+  -H "x-javelin-apikey: $JAVELIN_API_KEY" | jq .
+```
+
+```bash
+curl http://localhost:8040/v1/admin/tool-definitions \
+  -H "Content-Type: application/json" \
+  -H "x-javelin-apikey: $JAVELIN_API_KEY" | jq .
+```
+
+```bash
+ curl "http://localhost:8040/v1/admin/tool-definitions?enabled=true" \
+  -H "Content-Type: application/json" \
+  -H "x-javelin-apikey: $JAVELIN_API_KEY" | jq .
+```
+
+**Register** **Second & Third Tool Servers** ...
+
+2. **GitHub**
+
+```bash
+curl http://localhost:8040/v1/admin/tools/github \
+  -H "Content-Type: application/json" \
+  -H "x-javelin-apikey: $JAVELIN_API_KEY" \
+  -d '{
+    "name": "github",
+    "type": "streamable-http",
+    "version": "1.0.0",
+    "description": "GitHub Copilot MCP integration",
+    "endpoint": "https://api.githubcopilot.com/mcp/",
+    "is_active": true,
+    "config": {
+      "authorization_token": "Bearer ghp_xxxxxxxxxxxx"
+    },
+    "policy": {
+      "rate_limit": "100/min",
+      "timeout": "30s"
+    }
+  }'
+```
+
+3. **HuggingFace**
+
+```bash
+curl http://localhost:8040/v1/admin/tools/huggingface \
+  -H "Content-Type: application/json" \
+  -H "x-javelin-apikey: $JAVELIN_API_KEY" \
+  -d '{
+    "name": "huggingface",
+    "type": "streamable-http",
+    "version": "1.0.0",
+    "description": "Hugging Face MCP integration",
+    "endpoint": "https://huggingface.co/mcp",
+    "is_active": true,
+    "config": {
+      "authorization_token": "Bearer hf_xxxxxxxxxxxx"
+    }
+  }'
+```
+
+**DELETE** HuggingFace
+
+```bash
+curl -X DELETE http://localhost:8040/v1/admin/tools/huggingface \
+  -H "Content-Type: application/json" \
+  -H "x-javelin-apikey: $JAVELIN_API_KEY" | jq .
+```
    
 **Remote MCP server Catalog:**
 - [List of MCP servers](https://github.com/modelcontextprotocol/servers)

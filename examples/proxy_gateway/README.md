@@ -2,6 +2,9 @@
 > 
 > As the MCP protocol gains traction, enterprise vendors are increasingly incentivized to **block** rather than **enable** open developer usage—shifting focus from innovation to control.
 >
+> 
+
+![image](https://github.com/user-attachments/assets/290299fe-221b-4ee5-8ab3-3ff02c6bbab5)
 
 ## ⁠Local MCP server with the Local Tools
 
@@ -29,8 +32,6 @@ The Docker MCP ecosystem includes over 100 verified tools from partners like Str
 **Alternatives:** ❤️ open-source
 
 Applications like Claude only presently works over stdio, need to use a layer in between.
-
-![image](https://github.com/user-attachments/assets/290299fe-221b-4ee5-8ab3-3ff02c6bbab5)
 - [fastmcp](https://github.com/jlowin/fastmcp?tab=readme-ov-file#proxy-servers)
 - [mcp-proxy](https://github.com/sparfenyuk/mcp-proxy)
 

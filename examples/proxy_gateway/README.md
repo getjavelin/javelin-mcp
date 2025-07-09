@@ -35,6 +35,9 @@ Javelin Roadmap: https://github.com/getjavelin/javelin-rust - javelin-core++ Pri
 
 ## Remote MCP server with Remote Tools
 
+Listing servers we are testing with ...
+1. [Remote GitHub MCP Server](https://github.blog/changelog/2025-06-12-remote-github-mcp-server-is-now-available-in-public-preview/)
+
 ## ⁠Remote MCP server with Local (Builtin) Tools 
 
 In the current Javelin MCP architecture, **tools are expected to be registered and executed remotely** (via an HTTP or gRPC endpoint). However, some tools (such as deterministic utilities or safe built-in actions) may be registered as **builtin tools**, which execute locally within the Javelin runtime.

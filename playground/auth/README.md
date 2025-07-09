@@ -1,4 +1,4 @@
-![oauth2_security_pattern_complete_responsibility_segregation](https://github.com/user-attachments/assets/feca8eab-9005-422f-bbc8-40a5e2921fee)# Solving the Agent Identity Problem in OAuth/OIDC Systems
+# Solving the Agent Identity Problem in OAuth/OIDC Systems
 
 ## Executive Summary
 

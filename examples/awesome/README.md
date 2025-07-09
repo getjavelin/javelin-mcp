@@ -1,7 +1,7 @@
 - [The official Python SDK for Model Context Protocol servers and clients](https://github.com/modelcontextprotocol/python-sdk)
 - [Instantly transform your existing MCP Servers and APIs into MCP endpoints — without changing a line of code](https://github.com/AmoyLab/Unla)
 - [MCP Run Python](https://github.com/pydantic/pydantic-ai/tree/main/mcp-run-python)
-- GitHub - dagger/container-use: Development environments for coding agents. Enable multiple agents to work safely and independently with your preferred stack.
+- [Development environments for coding agents. Enable multiple agents to work safely and independently with your preferred stack](https://github.com/dagger/container-use)
 - GitHub - jlowin/fastmcp: 🚀 The fast, Pythonic way to build MCP servers and clients
 - https://www.jlowin.dev/blog/fastmcp-2-6
 - Strands Agents (AWS Strands SDK)

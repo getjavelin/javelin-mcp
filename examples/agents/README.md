@@ -8,4 +8,4 @@ Source: https://www.anthropic.com/engineering/building-effective-agents
 ## MCP Remote:
 - [Remote MCP - OpenAI API](https://platform.openai.com/docs/guides/tools-remote-mcp)
 - [MCP connector - Anthropic](https://docs.anthropic.com/en/docs/agents-and-tools/mcp-connector)
-- [Agent_Patterns](https://github.com/openai/openai-agents-python/tree/main/examples/agent_patterns)
+- [Agent Patterns](https://github.com/openai/openai-agents-python/tree/main/examples/agent_patterns)

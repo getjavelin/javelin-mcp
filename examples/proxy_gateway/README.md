@@ -37,6 +37,7 @@ Listing servers we are testing with ...
 3. [DeepWiki MCP Server](https://docs.devin.ai/work-with-devin/deepwiki-mcp)
 4. [Hugging Face](https://huggingface.co/settings/mcp)
 
+**Register First Tool Server** (AKA MCP Server)
 ```bash
 curl http://localhost:8040/v1/admin/tools/github \
   -H "Content-Type: application/json" \

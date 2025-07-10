@@ -27,13 +27,14 @@ The Docker MCP ecosystem includes over 100 verified tools from partners like Str
 
 **MCP server Catalog:** [Model Context Protocol Servers](https://github.com/modelcontextprotocol/servers)
   
-Listing servers we are testing with ...
+Listing MCP servers we are testing with ...
 
-1. [DeepWiki MCP Server](https://docs.devin.ai/work-with-devin/deepwiki-mcp)
-2. [Remote GitHub MCP Server](https://github.blog/changelog/2025-06-12-remote-github-mcp-server-is-now-available-in-public-preview/)
+1. [DeepWiki MCP](https://docs.devin.ai/work-with-devin/deepwiki-mcp)
+2. [GitHub MCP](https://github.blog/changelog/2025-06-12-remote-github-mcp-server-is-now-available-in-public-preview/)
       - [Architecture](https://github.com/github/github-mcp-server/blob/main/docs/host-integration.md)
-3. [Hugging Face](https://huggingface.co/settings/mcp)
-4. [Sentry MCP Server](https://mcp.sentry.dev/)
+3. [Hugging Face MCP](https://huggingface.co/settings/mcp)
+4. [Sentry MCP](https://mcp.sentry.dev/)
+5. [Stytch MCP](https://mcp.stytch.dev/)
 
 ![Screen01](https://github.com/user-attachments/assets/2c92dc17-adb4-4d27-ab28-c1b5d11f036e)
 

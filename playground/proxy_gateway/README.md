@@ -38,11 +38,11 @@ Listing MCP servers we are testing with ...
 4. [Sentry MCP](https://mcp.sentry.dev/)
 5. [Stytch MCP](https://mcp.stytch.dev/)
 
-![Screen01](https://github.com/user-attachments/assets/2c92dc17-adb4-4d27-ab28-c1b5d11f036e)
+![Screen01](https://github.com/user-attachments/assets/5726ab82-a65a-4ca8-8b44-91b320cad20c)
 
-![Screen02](https://github.com/user-attachments/assets/a031f8d2-da07-4d55-b5fe-78d8ff91df81)
+![Screen02](https://github.com/user-attachments/assets/7626e4f3-e6dd-4bb6-ade4-4417fc0bb181)
 
-![Screen03](https://github.com/user-attachments/assets/317558e7-0ada-4693-904d-5b640130489c)
+![Screen03](https://github.com/user-attachments/assets/620055a5-e16a-429d-a758-4a7ccb76c50a)
 
 **Register First Tool Server** (AKA MCP Server)
 

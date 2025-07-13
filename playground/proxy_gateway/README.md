@@ -116,10 +116,6 @@ curl https://your-javelin-domain.com/v1/admin/tools/github \
     "is_active": true,
     "config": {
       "authorization_token": "Bearer ghp_xxxxxxxxxxxx"
-    },
-    "policy": {
-      "rate_limit": "100/min",
-      "timeout": "30s"
     }
   }'
 ```

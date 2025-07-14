@@ -48,4 +48,4 @@ User Query → P-LLM → Python Code → CaMeL Interpreter → Secure Execution
 -- 
 
 **More Papers:**
-- https://arxiv.org/pdf/2506.08837
+- [Design Patterns for Securing LLM Agents against Prompt Injections](https://arxiv.org/pdf/2506.08837)

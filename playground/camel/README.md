@@ -57,9 +57,3 @@ User Query → P-LLM → Python Code → CaMeL Interpreter → Secure Execution
 - **Policy Enforcement**: Custom interpreter enforces security policies
 - **LLM Isolation**: Dual LLM pattern isolates planning from data processing
 - **Lethal Trifecta Protection**: Defends against attacks combining private data access, untrusted content, and external communication
-
-
--- 
-
-**More Papers:**
-- [Design Patterns for Securing LLM Agents against Prompt Injections](https://arxiv.org/pdf/2506.08837)

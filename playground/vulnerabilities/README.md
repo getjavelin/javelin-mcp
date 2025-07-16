@@ -24,6 +24,8 @@
 
   - [Critical Vulnerability in Anthropic's MCP Exposes Developer Machines to Remote Exploits](https://thehackernews.com/2025/07/critical-vulnerability-in-anthropics.html)
 
+  - [Supabase MCP can leak your entire SQL database](https://www.generalanalysis.com/blog/supabase-mcp-blog)
+
 --
 
 - https://simonwillison.net/tags/prompt-injection/  

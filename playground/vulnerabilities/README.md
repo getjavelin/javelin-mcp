@@ -40,6 +40,12 @@
 
 [Critical Vulnerability in Anthropic's MCP Exposes Developer Machines to Remote Exploits](https://thehackernews.com/2025/07/critical-vulnerability-in-anthropics.html)
 
+**Classification:** Malicious Code Execution (primary) — unauthenticated requests (incl. CSRF from a malicious web page leveraging the 0.0.0.0-day browser quirk) can command the MCP Inspector proxy to execute arbitrary OS commands on the developer’s machine. That is squarely “executing arbitrary code through vulnerable tools.”
+
+1. **Impact extension:** Remote Access Control takeover — successful exploitation grants the attacker full control of the host running MCP Inspector (read data, drop backdoors, lateral movement).
+2. **Attack surface pattern:** Multi-Vector Attack chain — combines a browser-origin vector (CSRF / 0.0.0.0-day / DNS rebinding) + exposed MCP Inspector endpoint + its “run arbitrary command” capability to pivot from mere web browsing to local RCE and further compromise.
+3. **Downstream risk:** Token Theft & data exfiltration are plausible post-RCE outcomes because attackers controlling the developer box can harvest API keys, credentials, and project data accessed by MCP tools. (Discussed as practical risks of host compromise in the writeups.) 
+   
 [Supabase MCP can leak your entire SQL database](https://www.generalanalysis.com/blog/supabase-mcp-blog)
   
 

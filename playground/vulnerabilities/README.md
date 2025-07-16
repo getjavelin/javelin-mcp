@@ -19,18 +19,15 @@
 10. **Multi-Vector Attacks:** Combining multiple vulnerabilities
 
   - [GitHub MCP Exploited: Accessing private repositories via MCP](https://invariantlabs.ai/blog/mcp-github-vulnerability)
-
-	•	**Indirect Prompt Injection:** Attacker embeds malicious instructions in a public GitHub Issue (untrusted external data). When the user’s agent (e.g., via Claude Desktop) asks to review issues, the model ingests that issue content and follows the injected instructions—pulling data from the user’s private repos and leaking it (e.g., via an auto-created PR). This is an injection delivered through data, not via the user prompt nor via altered tool metadata—your definition of Indirect Prompt Injection.
-
-	•**	Excessive Permissions:** The exploit succeeds because the agent’s GitHub credentials (PAT) often grant broad read/write access across both public and private repositories; the injected instructions then legitimately invoke MCP GitHub tools with those privileges. Principle-of-least-privilege violations (overbroad PAT scopes, cross-repo access) are highlighted as the key enabling weakness. 
-
-	•	**Multi-Vector Attack (impact chain):** The injected content triggers a sequence of tool calls—read issues → read private repos → create/write to a public PR—creating a “toxic agent flow” that chains data ingestion, privilege use, and exfiltration across trust boundaries. This chaining characteristic fits your Multi-Vector category. 
+    - **Indirect Prompt Injection:** Attacker embeds malicious instructions in a public GitHub Issue (untrusted external data). When the user’s agent (e.g., via Claude Desktop) asks to review issues, the model ingests that issue content and follows the injected instructions—pulling data from the user’s private repos and leaking it (e.g., via an auto-created PR). This is an injection delivered through data, not via the user prompt nor via altered tool metadata—your definition of Indirect Prompt Injection.
+    - **Excessive Permissions:** The exploit succeeds because the agent’s GitHub credentials (PAT) often grant broad read/write access across both public and private repositories; the injected instructions then legitimately invoke MCP GitHub tools with those privileges. Principle-of-least-privilege violations (overbroad PAT scopes, cross-repo access) are highlighted as the key enabling weakness. 
+    - **Multi-Vector Attack (impact chain):** The injected content triggers a sequence of tool calls—read issues → read private repos → create/write to a public PR—creating a “toxic agent flow” that chains data ingestion, privilege use, and exfiltration across trust boundaries. This chaining characteristic fits your Multi-Vector category. 
 
   - [Remote Prompt Injection in GitLab Duo Leads to Source Code Theft](https://www.legitsecurity.com/blog/remote-prompt-injection-in-gitlab-duo) 
 
   - [PoC Attack Targeting Atlassian’s Model Context Protocol (MCP) Introduces New “Living Off AI” Risk](https://www.catonetworks.com/blog/cato-ctrl-poc-attack-targeting-atlassians-mcp/) - 
---
 
+--
 - https://simonwillison.net/tags/prompt-injection/  
 - https://thehackernews.com/2025/07/critical-vulnerability-in-anthropics.html
 

@@ -1,26 +1,34 @@
-1. Prompt Injection: Manipulating LLM behavior through malicious inputs
+1. **Prompt Injection:** Manipulating LLM behavior through malicious inputs
 
-2. Tool Poisoning: Hiding malicious instructions in tool descriptions
+2. **Tool Poisoning:** Hiding malicious instructions in tool descriptions
 
-3. Excessive Permissions: Exploiting overly permissive tool access
+3. **Excessive Permissions:** Exploiting overly permissive tool access
+
+4. **Rug Pull Attacks:** Exploiting tool definition mutations
+
+5. **Tool Shadowing:** Overriding legitimate tools with malicious ones
+
+6. **Indirect Prompt Injection:** Injecting instructions through data sources
+
+7. **Token Theft:** Exploiting insecure token storage
+
+8. **Malicious Code Execution:** Executing arbitrary code through vulnerable tools
+
+9. **Remote Access Control:** Gaining unauthorized system access
+
+10. **Multi-Vector Attacks:** Combining multiple vulnerabilities
+
   - [GitHub MCP Exploited: Accessing private repositories via MCP](https://invariantlabs.ai/blog/mcp-github-vulnerability)
 
-4. Rug Pull Attacks: Exploiting tool definition mutations
+	•	**Indirect Prompt Injection:** Attacker embeds malicious instructions in a public GitHub Issue (untrusted external data). When the user’s agent (e.g., via Claude Desktop) asks to review issues, the model ingests that issue content and follows the injected instructions—pulling data from the user’s private repos and leaking it (e.g., via an auto-created PR). This is an injection delivered through data, not via the user prompt nor via altered tool metadata—your definition of Indirect Prompt Injection.
 
-5. Tool Shadowing: Overriding legitimate tools with malicious ones
+	•**	Excessive Permissions:** The exploit succeeds because the agent’s GitHub credentials (PAT) often grant broad read/write access across both public and private repositories; the injected instructions then legitimately invoke MCP GitHub tools with those privileges. Principle-of-least-privilege violations (overbroad PAT scopes, cross-repo access) are highlighted as the key enabling weakness. 
 
-6. Indirect Prompt Injection: Injecting instructions through data sources
-  - [PoC Attack Targeting Atlassian’s Model Context Protocol (MCP) Introduces New “Living Off AI” Risk](https://www.catonetworks.com/blog/cato-ctrl-poc-attack-targeting-atlassians-mcp/)
+	•	**Multi-Vector Attack (impact chain):** The injected content triggers a sequence of tool calls—read issues → read private repos → create/write to a public PR—creating a “toxic agent flow” that chains data ingestion, privilege use, and exfiltration across trust boundaries. This chaining characteristic fits your Multi-Vector category. 
 
-7. Token Theft: Exploiting insecure token storage
+  - [Remote Prompt Injection in GitLab Duo Leads to Source Code Theft](https://www.legitsecurity.com/blog/remote-prompt-injection-in-gitlab-duo) 
 
-8. Malicious Code Execution: Executing arbitrary code through vulnerable tools
-  - [Remote Prompt Injection in GitLab Duo Leads to Source Code Theft](https://www.legitsecurity.com/blog/remote-prompt-injection-in-gitlab-duo)
-
-9. Remote Access Control: Gaining unauthorized system access
-
-10. Multi-Vector Attacks: Combining multiple vulnerabilities
-
+  - [PoC Attack Targeting Atlassian’s Model Context Protocol (MCP) Introduces New “Living Off AI” Risk](https://www.catonetworks.com/blog/cato-ctrl-poc-attack-targeting-atlassians-mcp/) - 
 --
 
 - https://simonwillison.net/tags/prompt-injection/  

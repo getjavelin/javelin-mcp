@@ -1,3 +1,5 @@
+[The lethal trifecta for AI agents: private data, untrusted content, and external communication](https://simonwillison.net/tags/prompt-injection/)
+
 1. **Prompt Injection:** Manipulating LLM behavior through malicious inputs
 2. **Tool Poisoning:** Hiding malicious instructions in tool descriptions
 3. **Excessive Permissions:** Exploiting overly permissive tool access
@@ -25,9 +27,6 @@
   - [Critical Vulnerability in Anthropic's MCP Exposes Developer Machines to Remote Exploits](https://thehackernews.com/2025/07/critical-vulnerability-in-anthropics.html)
 
   - [Supabase MCP can leak your entire SQL database](https://www.generalanalysis.com/blog/supabase-mcp-blog)
-
---
-
-- https://simonwillison.net/tags/prompt-injection/  
+  
 
 

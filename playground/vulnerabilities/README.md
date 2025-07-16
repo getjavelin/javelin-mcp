@@ -15,6 +15,9 @@
     - **Multi-Vector Attack (impact chain):** The injected content triggers a sequence of tool calls—read issues → read private repos → create/write to a public PR—creating a “toxic agent flow” that chains data ingestion, privilege use, and exfiltration across trust boundaries. This chaining characteristic fits your Multi-Vector category. 
 
   - [Remote Prompt Injection in GitLab Duo Leads to Source Code Theft](https://www.legitsecurity.com/blog/remote-prompt-injection-in-gitlab-duo) 
+    - **Indirect Prompt Injection (primary):** The malicious payload lives in an external Jira Service Management support ticket submitted by an untrusted party; when an internal user invokes an MCP-powered AI action (e.g., summarize), the model ingests that ticket content and executes the attacker’s instructions with elevated context. The injection comes through the data source, not via a direct user prompt—your definition of Indirect Prompt Injection.
+    - **Excessive Permissions (contributing weakness):** The MCP integration runs with the internal agent’s privileges and can read internal Jira/Confluence items and then post back into the attacker-visible ticket, breaking the intended boundary between external and internal tenants—classic over-broad tool permissions abuse. 
+    - **Multi-Vector / Remote Access escalation (impact path):** Cato’s extended scenario shows how the injected instructions can be combined with additional steps (auto-comments w/ malicious links leading to C2, lateral movement, data exfiltration), illustrating chained vectors beyond the initial injection—i.e., Multi-Vector Attack with Remote Access Control implications.
 
   - [PoC Attack Targeting Atlassian’s Model Context Protocol (MCP) Introduces New “Living Off AI” Risk](https://www.catonetworks.com/blog/cato-ctrl-poc-attack-targeting-atlassians-mcp/)
 

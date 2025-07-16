@@ -47,6 +47,13 @@
 3. **Downstream risk:** Token Theft & data exfiltration are plausible post-RCE outcomes because attackers controlling the developer box can harvest API keys, credentials, and project data accessed by MCP tools. (Discussed as practical risks of host compromise in the writeups.) 
    
 [Supabase MCP can leak your entire SQL database](https://www.generalanalysis.com/blog/supabase-mcp-blog)
+
+**Classification:** Indirect Prompt Injection (primary) enabled by Excessive Permissions (service_role bypassing RLS + write access), leading to Token Theft / Sensitive Data Exfiltration and demonstrating a Multi-Vector (“lethal trifecta”) Attack chain. Not Tool Poisoning. Not Rug Pull.
+
+1. **Indirect Prompt Injection:** Attacker plants instruction text in a support ticket message (untrusted data). When a developer’s Cursor agent reviews tickets, the LLM ingests that message and treats the embedded instructions as commands—reading and then writing data via Supabase MCP.
+2. **Excessive Permissions:** The agent operates the database using the Supabase service_role, which bypasses all Row-Level Security and grants full SQL over every table; this privilege boundary is highlighted as the weak link in the attack setup.
+3. **Token Theft / Data Exfil:** The malicious instructions direct the agent to dump the sensitive integration_tokens table and insert the results back into the ticket thread, exposing secrets to the attacker.
+4. **Multi-Vector (“lethal trifecta”) Chain:** Simon Willison calls this another lethal trifecta case: a system that combines (1) access to private data, (2) exposure to malicious instructions, and (3) a channel to exfiltrate data back out (DB writes to attacker-visible ticket). The Supabase MCP’s broad tool abilities (manage/query DB, etc.) make the chain possible when misconfigured with high privileges.
   
 
 

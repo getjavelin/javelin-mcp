@@ -10,6 +10,7 @@
 5. Tool Shadowing: Overriding legitimate tools with malicious ones
 
 6. Indirect Prompt Injection: Injecting instructions through data sources
+  - [PoC Attack Targeting Atlassian’s Model Context Protocol (MCP) Introduces New “Living Off AI” Risk](https://www.catonetworks.com/blog/cato-ctrl-poc-attack-targeting-atlassians-mcp/)
 
 7. Token Theft: Exploiting insecure token storage
 

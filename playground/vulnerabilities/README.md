@@ -1,4 +1,6 @@
 [The lethal **trifecta** for AI agents: Private data, Untrusted content, and External Communication](https://simonwillison.net/tags/prompt-injection/)
+<img width="2092" height="1046" alt="image" src="https://github.com/user-attachments/assets/a64d40cb-3ce3-4e46-9373-008a7e5f4167" />
+
 1. **Prompt Injection:** Manipulating LLM behavior through malicious inputs
 2. **Tool Poisoning:** Hiding malicious instructions in tool descriptions
 3. **Excessive Permissions:** Exploiting overly permissive tool access

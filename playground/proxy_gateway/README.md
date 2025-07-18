@@ -37,6 +37,7 @@ Listing MCP servers we are testing with ...
 3. [Hugging Face MCP](https://huggingface.co/settings/mcp)
 4. [Sentry MCP](https://mcp.sentry.dev/)
 5. [Stytch MCP](https://mcp.stytch.dev/)
+6. [Grep MCP](https://mcp.grep.app)
 
 ![Screen01](https://github.com/user-attachments/assets/5726ab82-a65a-4ca8-8b44-91b320cad20c)
 

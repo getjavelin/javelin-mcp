@@ -15,44 +15,45 @@ This project brings together:
 ## Repository Structure
 
 ### Core Components
-- **playground/agents/**: Integration patterns and resources for building AI agents with MCP
+- [**playground/agents/**](playground/agents/): Integration patterns and resources for building AI agents with MCP
   - Example agent implementations
   - Best practices for OpenAI and Anthropic integration
-  - Documentation on agent design patterns
+  - Documentation on agent design patterns in [`README.md`](playground/agents/README.md)
 
-- **playground/proxy_gateway/**: Gateway and proxy implementations for secure MCP communication
-  - `openai_agents/`: Transport implementations for OpenAI agents
-  - `proxy_go/`: Go-based MCP proxy implementation using the official Go SDK
-  - Examples of SSE and Streamable HTTP transports
+- [**playground/proxy_gateway/**](playground/proxy_gateway/): Gateway and proxy implementations for secure MCP communication
+  - [`openai_agents/`](playground/proxy_gateway/openai_agents/): Transport implementations for OpenAI agents
+  - [`proxy_go/`](playground/proxy_gateway/proxy_go/): Go-based MCP proxy implementation using the official Go SDK
+  - Examples of SSE and Streamable HTTP transports in [`transports.py`](playground/proxy_gateway/openai_agents/transports.py)
 
 ### Security & Authentication
-- **playground/auth/**: Comprehensive documentation on agent security architecture
-  - `agent_identity.md`: Detailed solution for agent identity in OAuth/OIDC systems
-  - `identity_trust.md`: In-depth analysis of trust frameworks for agentic systems
+- [**playground/auth/**](playground/auth/): Comprehensive documentation on agent security architecture
+  - [`agent_identity.md`](playground/auth/agent_identity.md): Detailed solution for agent identity in OAuth/OIDC systems
+  - [`identity_trust.md`](playground/auth/identity_trust.md): In-depth analysis of trust frameworks for agentic systems
 
-- **playground/vulnerabilities/**: Security research and vulnerability analysis
-  - Documentation of known MCP vulnerabilities
+- [**playground/vulnerabilities/**](playground/vulnerabilities/): Security research and vulnerability analysis
+  - Documentation of known MCP vulnerabilities in [`README.md`](playground/vulnerabilities/README.md)
   - Analysis of attack vectors (prompt injection, token theft, etc.)
   - Security best practices and mitigation strategies
 
 ### Integration Patterns
-- **playground/deepwiki/**: Reference implementations for MCP integration patterns
-  - Examples of LLM as MCP Client
-  - Implementations with Anthropic's Claude
-  - OpenAI integration patterns
-  - One-step and two-step integration approaches
+- [**playground/deepwiki/**](playground/deepwiki/): Reference implementations for MCP integration patterns
+  - Examples of LLM as MCP Client in [`deepwiki_with_openai_llm_is_mcpclient.py`](playground/deepwiki/deepwiki_with_openai_llm_is_mcpclient.py)
+  - Implementations with Anthropic's Claude in [`deepwiki_with_anthropic_llm_is_mcpclient.py`](playground/deepwiki/deepwiki_with_anthropic_llm_is_mcpclient.py)
+  - One-step and two-step integration approaches in:
+    - [`deepwiki_anthropic_app_is_mcpclient_one_step.py`](playground/deepwiki/deepwiki_anthropic_app_is_mcpclient_one_step.py)
+    - [`deepwiki_anthropic_app_is_mcpclient_two_step.py`](playground/deepwiki/deepwiki_anthropic_app_is_mcpclient_two_step.py)
 
-- **playground/camel/**: CaMeL (CApabilities for MachinE Learning) implementation
-  - `labs/`: Experimental research and threat analysis
-  - Implementation of secure prompt injection prevention
-  - Architecture for controlled AI agent execution
+- [**playground/camel/**](playground/camel/): CaMeL (CApabilities for MachinE Learning) implementation
+  - [`labs/`](playground/camel/labs/): Experimental research and threat analysis
+  - Implementation of secure prompt injection prevention detailed in [`README.md`](playground/camel/README.md)
+  - Security research documented in [`labs/Threat Research.md`](playground/camel/labs/Threat%20Research.md)
 
 ### Resources & Tools
-- **playground/awesome/**: Curated collection of MCP ecosystem tools
+- [**playground/awesome/**](playground/awesome/): Curated collection of MCP ecosystem tools
   - Official SDKs and client libraries
   - Development tools and frameworks
   - UI components and visualization tools
-  - Educational resources and documentation
+  - Comprehensive resource list in [`README.md`](playground/awesome/README.md)
 
 ## Start Here
 - For a deep dive into agent identity and trust, see:

@@ -12,7 +12,7 @@
 9. **Remote Access Control:** Gaining unauthorized system access
 10. **Multi-Vector Attacks:** Combining multiple vulnerabilities
 
-[GitHub MCP Exploited: Accessing private repositories via MCP](https://invariantlabs.ai/blog/mcp-github-vulnerability)
+[**GitHub MCP Exploited:** Accessing private repositories via MCP](https://invariantlabs.ai/blog/mcp-github-vulnerability)
 
 **Classification:** Indirect Prompt Injection (primary), enabled by Excessive Permissions, and often realized as a Multi-Vector Attack that can result in cross-repository data exfiltration (remote access/data leak). Not a Tool Poisoning case (the GitHub MCP tools themselves remain trusted/unchanged).
 
@@ -20,7 +20,7 @@
 2. **Excessive Permissions:** The exploit succeeds because the agent’s GitHub credentials (PAT) often grant broad read/write access across both public and private repositories; the injected instructions then legitimately invoke MCP GitHub tools with those privileges. Principle-of-least-privilege violations (overbroad PAT scopes, cross-repo access) are highlighted as the key enabling weakness.
 3. **Multi-Vector Attack (impact chain):** The injected content triggers a sequence of tool calls—read issues → read private repos → create/write to a public PR—creating a “toxic agent flow” that chains data ingestion, privilege use, and exfiltration across trust boundaries. This chaining characteristic fits your Multi-Vector category. 
 
-[Remote Prompt Injection in GitLab Duo Leads to Source Code Theft](https://www.legitsecurity.com/blog/remote-prompt-injection-in-gitlab-duo)
+[Remote Prompt Injection in **GitLab Duo** Leads to Source Code Theft](https://www.legitsecurity.com/blog/remote-prompt-injection-in-gitlab-duo)
 
 **Classification:** Indirect Prompt Injection (remote) – primary. Secondary contributing factors: Excessive Permissions / over-broad context access, HTML-based data exfiltration path (Remote Access Control–like impact), Malicious Code Execution potential via tainted code suggestions, culminating in a Multi-Vector Attack chain.
 
@@ -30,7 +30,7 @@
 4. **Malicious Code Execution (supply-chain vector):** Injected prompts could alter Duo’s code suggestions—e.g., recommending a malicious JavaScript package or otherwise tainting code that, if accepted and run, leads to downstream execution risk.
 5. **Multi-Vector Attack Chain:** The full PoC strings together hidden prompts + encoding/obfuscation tricks + HTML rendering + privileged data access to exfiltrate sensitive code and potentially phish or deliver payloads—an orchestrated, multi-stage exploitation across layers.
 
-[PoC Attack Targeting Atlassian’s Model Context Protocol (MCP) Introduces New “Living Off AI” Risk](https://www.catonetworks.com/blog/cato-ctrl-poc-attack-targeting-atlassians-mcp/)
+[PoC Attack Targeting **Atlassian’s Model Context Protocol (MCP)** Introduces New “Living Off AI” Risk](https://www.catonetworks.com/blog/cato-ctrl-poc-attack-targeting-atlassians-mcp/)
 
 **Classification:** It’s primarily an Indirect Prompt Injection attack that’s enabled by Excessive Permissions on the MCP action path, and (in the extended scenario) chains into a Multi-Vector Attack with potential Remote Access Control / data exfiltration consequences.
 
@@ -38,7 +38,7 @@
 2. **Excessive Permissions (contributing weakness):** The MCP integration runs with the internal agent’s privileges and can read internal Jira/Confluence items and then post back into the attacker-visible ticket, breaking the intended boundary between external and internal tenants—classic over-broad tool permissions abuse.
 3. **Multi-Vector / Remote Access escalation (impact path):** Cato’s extended scenario shows how the injected instructions can be combined with additional steps (auto-comments w/ malicious links leading to C2, lateral movement, data exfiltration), illustrating chained vectors beyond the initial injection—i.e., Multi-Vector Attack with Remote Access Control implications.
 
-[Critical Vulnerability in Anthropic's MCP Exposes Developer Machines to Remote Exploits](https://thehackernews.com/2025/07/critical-vulnerability-in-anthropics.html)
+[Critical Vulnerability in **Anthropic's MCP** Exposes Developer Machines to Remote Exploits](https://thehackernews.com/2025/07/critical-vulnerability-in-anthropics.html)
 
 **Classification:** Malicious Code Execution (primary) — unauthenticated requests (incl. CSRF from a malicious web page leveraging the 0.0.0.0-day browser quirk) can command the MCP Inspector proxy to execute arbitrary OS commands on the developer’s machine. That is squarely “executing arbitrary code through vulnerable tools.”
 
@@ -46,7 +46,7 @@
 2. **Attack surface pattern:** Multi-Vector Attack chain — combines a browser-origin vector (CSRF / 0.0.0.0-day / DNS rebinding) + exposed MCP Inspector endpoint + its “run arbitrary command” capability to pivot from mere web browsing to local RCE and further compromise.
 3. **Downstream risk:** Token Theft & data exfiltration are plausible post-RCE outcomes because attackers controlling the developer box can harvest API keys, credentials, and project data accessed by MCP tools. (Discussed as practical risks of host compromise in the writeups.) 
    
-[Supabase MCP can leak your entire SQL database](https://www.generalanalysis.com/blog/supabase-mcp-blog)
+[**Supabase MCP** can leak your entire SQL database](https://www.generalanalysis.com/blog/supabase-mcp-blog)
 
 **Classification:** Indirect Prompt Injection (primary) enabled by Excessive Permissions (service_role bypassing RLS + write access), leading to Token Theft / Sensitive Data Exfiltration and demonstrating a Multi-Vector (“lethal trifecta”) Attack chain. Not Tool Poisoning. Not Rug Pull.
 

@@ -5,7 +5,7 @@ Welcome to the Javelin MCP project! This repository is a comprehensive playgroun
 ## What is MCP?
 **Model Context Protocol (MCP)** is an emerging standard for enabling secure, flexible, and auditable communication between AI agents, clients, and servers. MCP is designed to address the unique challenges of agent identity, authentication, authorization, and trust in modern cloud and enterprise environments.
 
-[blog post that answers the most common questions i've been getting from developers, partners and enterprises](https://vercel.com/blog/model-context-protocol-mcp-explained)
+[Blog post that answers the most common questions from developers, partners and enterprises](https://vercel.com/blog/model-context-protocol-mcp-explained)
 
 ## Project Purpose
 This project brings together:

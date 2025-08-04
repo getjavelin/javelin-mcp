@@ -15,6 +15,7 @@ The Docker MCP ecosystem includes over 100 verified tools from partners like Str
 - [Docker MCP Servers Repository](https://github.com/docker/mcp-servers)
 - [Introducing Docker MCP Catalog and Toolkit](https://www.docker.com/blog/introducing-docker-mcp-catalog-and-toolkit/)
 - [MCP Introduction and Overview](https://www.philschmid.de/mcp-introduction)
+- [MCP Horror Stories: The Security Issues Threatening AI Infrastructure](https://www.docker.com/blog/mcp-security-issues-threatening-ai-infrastructure/)
 
 <img width="1728" alt="Screenshot 2025-07-08 at 3 35 56 PM" src="https://github.com/user-attachments/assets/76039f18-6e03-4ae5-899d-83a6597c42bf"/>
 
